@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="v2.css">
+  <script src="https://kit.fontawesome.com/0f55910cdd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <form id="form">
+    <h1>Stock Management</h1>
+    <div class="form-control">
+      <label for="nom">Name</label>
+      <input type="text" id="nom" name="nom" />
+      <div></div>
+      <small></small>
+    </div>
+    <div class="form-control">
+      <label for="marque">Brand</label>
+      <input type="text" id="marque" name="marque" />
+      <div></div>
+      <small></small>
+    </div>
+    <div class="form-control">
+      <label for="prix">Price</label>
+      <input type="text" id="prix" name="prix" />
+      <div></div>
+      <small></small>
+    </div>
+    <div class="form-control">
+      <label for="date">Date </label>
+      <input type="date" id="date" name="date" />
+      <div></div>
+      <small></small>
+    </div>
+    <div class="form-control">
+      <label>Type</label>
+      <select name="type" id="type">
+        <option value="" disabled selected>choose..</option>
+        <option value="hygiène et toilette">hygiène et toilette</option>
+        <option value="soins esthétiques">soins esthétiques</option>
+        <option value="produits solaires"> produits solaires</option>
+        <option value="beauté des mains et des pieds">beauté des mains et des pieds</option>
+        <option value="gproduits de maquillage">produits de maquillage</option>
+        <option value="entretien capillaires">entretien capillaires</option>
+        <option value="parfums">parfums</option>
+      </select>
+      <div></div>
+      <small></small>
+    </div>
+    <div class="form-control">
+      <label>Discount</label>
+      <div>
+        <label><input type="radio" name="promotion" id="1" value="Yes" />Yes </label>
+        <label><input type="radio" name="promotion" id="2" value="No" />NO </label>
+      </div>
+      <div></div>
+      <small></small>
+    </div>
+    <input type="button" value="AJOUTER" id="ajouter">
+  </form>
+  <div class="modal1">
+    <div class="modal1-content">
+      <div class="modal1-text">
+        <h1>hahoma</h1>
+      </div>
+          <input type="button" value="Okey" id="okey">
+    </div>
+  </div>
+<div class="modal">
+    <div class="modal-content">
+      <div class="modal-text">
+        <h2>Delete Product</h2>
+        <p>Are you sure you want to delete product</p>
+      </div>
+
+        <div class="buttons">
+          <input type="button" value="Cancel" id="cancel" >
+          <input type="button" value="Delete" id="delete" >
+        </div>
+    </div>
+</div>
+  <section class="products">
+    <input type="text" id="search" >
+    <input type="button" value="search" id="btnsearch">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr class="text-center">
+          <th>Name</th>
+          <th>Brand</th>
+          <th>Price</th>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Discount</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productList">
+      </tbody>
+    </table>
+  </section>
+
+  <script src="v2.js"></script>
+</body>
+
+</html>
